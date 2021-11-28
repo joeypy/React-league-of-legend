@@ -1,0 +1,103 @@
+@use './scss/' as *;
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: $font-family;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: $black;
+    color: $white;
+    overflow: hidden;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+iframe {
+    border: 0;
+}
+
+#root,
+.App {
+    height: 100%;
+}
+
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: 0.8);
+    }
+}
+
+.main-color {
+    color: $main-color;
+}
+
+.second-color {
+    color: $second-color;
+}
+
+.title {
+    font-weight: 700;
+    span {
+        font-size: 4.8rem;
+    }
+    h2 {
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+}
+
+.container {
+    max-width: 150rem;
+    margin: auto;
+}
+
+.mt-4 {
+    margin-top: 6.4rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.swiper,
+.swiper-slide {
+    height: 100%;
+}
